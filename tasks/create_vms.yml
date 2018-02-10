@@ -17,6 +17,7 @@
     memory_guaranteed: "{{ current_vm.profile.memory_guaranteed | default(omit) }}"
     cpu_sockets: "{{ current_vm.profile.sockets | default(omit) }}"
     high_availability: "{{ current_vm.profile.high_availability | default(omit) }}"
+    clone: "{{ current_vm.profile.clone | default(omit) }}"
     storage_domain: "{{ current_vm.profile.storage_domain | default(omit) }}"
     timeout: "{{ vm_infra_create_single_timeout }}"
   changed_when: false
